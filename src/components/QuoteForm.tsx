@@ -7,8 +7,8 @@ const QuoteForm = () => {
   const [quote, setQuote] = useState<quote>({
     id: 0,
     quoteString: "",
-    date: "2022-02-04",
-    addDate: "2022-02-04",
+    date: new Date().toISOString(),
+    addDate: new Date().toISOString(),
     status: "A",
   });
 

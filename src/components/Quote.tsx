@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {
   quoteString: String | undefined;
-  date: String | undefined;
+  date: string | undefined;
 }
 
 export default function Quote({ quoteString, date }: Props) {
@@ -11,7 +11,7 @@ export default function Quote({ quoteString, date }: Props) {
       {quoteString && date && (
         <div>
           <p>{`"${quoteString}"`}</p>
-          <p>{`${date}`}</p>
+          <p>{`${new Date(date).toLocaleDateString()}`}</p>
         </div>
       )}
     </>
