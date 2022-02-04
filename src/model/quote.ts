@@ -1,7 +1,7 @@
 export interface quote {
-    id: number,
-    quoteString: String,
-    date: Date,
-    addDate: Date,
+    id: number | undefined ,
+    quoteString: string,
+    date: string,
+    addDate: string,
     status: string
 }

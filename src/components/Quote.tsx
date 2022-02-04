@@ -1,8 +1,8 @@
-import react from "react";
+import React from "react";
 
 interface Props {
   quoteString: String | undefined;
-  date: Date | undefined;
+  date: String | undefined;
 }
 
 export default function Quote({ quoteString, date }: Props) {

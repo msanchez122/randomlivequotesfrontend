@@ -5,8 +5,11 @@ export default function DashBoard() {
   return (
     <div>
       <button>
-        <Link to={"/"}>Salir</Link>
+        <Link to={"/createQuote"}>Add quote</Link>
+      </button>
+      <button>
+        <Link to={"/"}>Volver</Link>
       </button>
     </div>
-  );
+  );  
 }
